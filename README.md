@@ -2,7 +2,7 @@
 
 ## 一、ArrayList容器
 
-​	List<'String'> list1 = new ArrayList<>();
+​	List< String > list1 = new ArrayList<>();
 
 ​	List<类名> 对象名 = new ArrayList<>();
 
@@ -20,7 +20,7 @@
 
 代码示例：
 
-​	List<String> list1 = new ArrayList<>();
+​	List< String > list1 = new ArrayList<>();
 
 ​	for(String item : list1){
 
