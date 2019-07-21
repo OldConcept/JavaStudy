@@ -2,7 +2,7 @@
 
 ## 一、ArrayList容器
 
-​	List<String> list1 = new ArrayList<>();
+​	List<'String'> list1 = new ArrayList<>();
 
 ​	List<类名> 对象名 = new ArrayList<>();
 
@@ -39,3 +39,5 @@
 ​		System.out.println(item);
 
 }
+
+​	
