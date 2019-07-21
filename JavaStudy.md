@@ -90,4 +90,63 @@
 
 一般常量值要求全部大写，也可加入下划线，如：DOG_COLOR
 
-​	
+## 五、Stream流操作
+
+### 1.Stream filter是一段数据的序列，如：
+
+​	List< String > strings = Arrays.asList("abc",",","123");
+
+### 2.Stream filter过滤操作
+
+​	List< String > filterd = strings.streams().filter(**st->st.startsWith("a")**).collect(Collectors.toList());
+
+加粗的是过滤规则，可以自己编写，也可以用官方的
+
+## 六、StringBuilder
+
+StringBuilder用于实例化一个可变的字符串对象
+
+​	StringBuilder sb = new StringBuilder();
+
+​	sb.append("Hello");
+
+StringBuilder对象使用append方法加入字符串
+
+**注意：sb.toString()不能够让sb变成String类型，sb本质还是StringBuilder类型，toString方法只能返回一个String类型的值，当方法需要返回其String类型时，只需要return sb.toString()就行 **
+
+## 七、字符串的比较
+
+​	boolean s = a.equals(b);
+
+a,b为字符串
+
+## 八、枚举类型
+
+### 1.枚举类型的关键字是：enum 其地位与class相同
+
+### 2.所有的枚举值都是常量
+
+### 3.枚举类型不能实例化
+
+示例：
+
+​	public enum Animal{
+
+​		cat**,**
+
+​		tiger**,**
+
+​		dog
+
+​	}
+
+## 九、继承
+
+**继承格式： public class 类名 extends 某个类**
+
+### 父子关系的强制转换
+
+#### 1.子转父： Fruit fruit = apple; (这种关系转换可以直接使用“=”)
+
+#### 2.父转子： Apple apple = (Apple) fruit; (这种关系转换必须使用类型强制转换)
+
