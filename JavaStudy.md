@@ -132,9 +132,9 @@ a,b为字符串
 
 ​	public enum Animal{
 
-​		cat**,**
+​		cat,
 
-​		tiger**,**
+​		tiger,
 
 ​		dog
 
