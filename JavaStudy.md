@@ -150,3 +150,57 @@ a,b为字符串
 
 #### 2.父转子： Apple apple = (Apple) fruit; (这种关系转换必须使用类型强制转换)
 
+## 十、接口
+
+### 1、定义
+
+同一行为有不同的实现，接口的存在容易拓展更多的实现
+
+**规范：    包名：service**
+
+​				**接口名：以Service结尾**
+
+​				**类型：interface** 
+
+​	public interface RedPacketService{
+
+​	public void send(String toUserKey);//**注意接口没有{}写实现方法**
+
+}
+
+### 2、接口的实现
+
+接口的实现是指在特定的场景下实现接口的具体行为(就比如发红包，发红包可以有支付宝发红包，也可以有微信发红包)
+
+**规范：	包名：service.impl**
+
+​				**类名：以ServiceImpl结尾**
+
+​	public class AlipayRedPacketServiceImpl implements RedPacketService{
+
+​	@Override
+
+​	public void send(String toUserKey){
+
+​	//这里面写具体的实现方法
+
+}
+
+}
+
+### 3、一些注意点
+
+* 一个类可以既有继承的同时也有对接口的实现，规范如下：
+
+  public class ClassA **extends** ClassB **implements** InterfaceA{}
+
+  这个格式是必须的，必须先进行继承然后再有接口
+
+* 一个类实现某接口，必须重写该接口下的所有方法(**抽象类除外**)
+
+* java类是单继承的，但java接口可以多继承
+
+  * 一个类只能extends一个父类，但是可以implements多个接口
+  * 一个接口可以extends多个接口，但不能implementd任何接口
+
+  * 不允许类多重继承的原因是,如果A同时继承B和C，而B和C有同一个方法，那么A就无法确定该继承哪个方法
