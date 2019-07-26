@@ -53,7 +53,7 @@ for(int index=0;index<list1.size();index++){
 ```java
 Date day1 = new Date();
 day1.getTime();//返回当前毫秒数
-SimpleDateFormat adf = new SimpleDateFormat(pattern: "yyyy-MM-dd HH:mm:ss");
+SimpleDateFormat sdf = new SimpleDateFormat(pattern: "yyyy-MM-dd HH:mm:ss");
 System.out.println("当前时间："+sdf.format(day1));//将当前时间以标准格式输出，其的yyyy-MM-dd HH:mm:ss也可以换成yyyy/MM/dd HH:mm:ss，可以自定义格式
 try{
 	Date day2 = sdf.parse(source:"1988/05/03 15:23:12");
