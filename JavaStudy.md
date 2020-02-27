@@ -205,7 +205,7 @@ public class AlipayRedPacketServiceImpl implements RedPacketService{
 * java类是单继承的，但java接口可以多继承
 
   * 一个类只能extends一个父类，但是可以implements多个接口
-  * 一个接口可以extends多个接口，但不能implementd任何接口
+  * 一个接口可以extends多个接口，但不能implements任何接口
 
   * 不允许类多重继承的原因是,如果A同时继承B和C，而B和C有同一个方法，那么A就无法确定该继承哪个方法
 
